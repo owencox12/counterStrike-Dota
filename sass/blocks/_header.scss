@@ -1,0 +1,49 @@
+.header {
+    min-height: 72px;
+    background: #20222A;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 16px;
+        align-items: center;
+    }
+    &__burger {
+        display: none;
+        &_list {
+            display: none;
+        }
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        &_language {
+            &_select {
+                background: none;
+                color: #fff;
+                padding: 12px;
+                border-radius: 15px;
+                &_option {
+                    color: #fff;
+                }
+            }
+        }
+        &_menu {
+            margin-left: 139px;
+            &_list {
+                display: flex;
+                &_type {
+                    margin: 0 16px;
+                    a {
+                        font-family: 'Rubik';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #FFFFFF;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

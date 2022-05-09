@@ -1,0 +1,259 @@
+.choice {
+    border-bottom: 1px solid gray;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+        padding-bottom: 34px;
+    }
+    &__item {
+        &_search {
+            input {
+                width: 392px;
+                height: 48px;
+                border: 1px solid #3D4554;
+                border-radius: 24px;
+                background: none;
+                padding-left: 50px;
+                background: url(../../image/search.png) 15px no-repeat;
+                background-position-y: center;
+                &::before {
+                    content: '';
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+        &_best {
+            display: flex;
+            margin-top: 62px;
+            align-items: center;
+            justify-content: right;
+            &_text {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: #FFFFFF;
+                margin-left: 20px;
+                span {
+                    border: 3px solid gray;
+                    border-radius: 100px;
+                    padding: 5px;
+                    margin-left: 12px;
+                }
+
+            }
+        }
+        &_title {
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 40px;
+            color: #FFFFFF;
+        }
+        &_subtitle {
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 16px;
+            color: #FFFFFF;
+            margin-top: 12px;
+        }
+        &_blocks {
+            margin-top: 42px;
+            display: flex;
+            &_text {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+                color: rgba(255, 255, 255, 0.5);
+                padding-right: 10px;
+            }
+            &_checkbox {
+                position: relative;
+                display: flex;
+                // input[type="checkbox"] {
+                //     display: none;
+                // }
+                &_input     {
+                    appearance: none;
+                    position: absolute;
+                    &_label {
+                        font-family: 'Rubik';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: rgba(255, 255, 255, 0.5);
+                        margin: 0 15px;
+                        cursor: pointer;
+                        padding-left: 25px;
+                        &_green {
+                            &::before {
+                                content: '';
+                                display: block;
+                                width: 15px;
+                                height: 15px;
+                                border: 2px solid green;
+                                position: absolute;
+                                border-radius: 5px;
+                                background: none;
+                                left: 0;
+                                top: 0;
+                                z-index: 1;
+                            }
+                        }
+                        &_yellow {
+                            &::before {
+                                content: '';
+                                display: block;
+                                width: 15px;
+                                height: 15px;
+                                border: 2px solid yellow;
+                                position: absolute;
+                                border-radius: 5px;
+                                background: none;
+                                left: 0;
+                                top: 0;
+                                z-index: 1;
+                            }
+                        }
+                        &_red {
+                            &::before {
+                                content: '';
+                                display: block;
+                                width: 15px;
+                                height: 15px;
+                                border: 2px solid red;
+                                position: absolute;
+                                border-radius: 5px;
+                                background: #fff;
+                                left: 0;
+                                top: 0;
+                                z-index: 1;
+                                background: none;
+                            }
+                        }
+                        &_purple {
+                            &::before {
+                                content: '';
+                                display: block;
+                                width: 15px;
+                                height: 15px;
+                                border: 2px solid purple;
+                                position: absolute;
+                                border-radius: 5px;
+                                background: #fff;
+                                left: 0;
+                                top: 0;
+                                z-index: 1;
+                                background: none;
+                            }
+                        }
+                        &_fiolet {
+                            &::before {
+                                content: '';
+                                display: block;
+                                width: 15px;
+                                height: 15px;
+                                border: 2px solid #8b00ff;
+                                position: absolute;
+                                border-radius: 5px;
+                                background: #fff;
+                                left: 0;
+                                top: 0;
+                                z-index: 1;
+                                background: none;
+                            }
+                        }
+                        &_blue {
+                            &::before {
+                                content: '';
+                                display: block;
+                                width: 15px;
+                                height: 15px;
+                                border: 2px solid blue;
+                                position: absolute;
+                                border-radius: 5px;
+                                background: #fff;
+                                left: 0;
+                                top: 0;
+                                z-index: 1;
+                                background: none;
+                            }
+                        }
+                        &_bluesteel {
+                            &::before {
+                                content: '';
+                                display: block;
+                                width: 15px;
+                                height: 15px;
+                                border: 2px solid #4682b4 ;
+                                position: absolute;
+                                border-radius: 5px;
+                                background: #fff;
+                                left: 0;
+                                top: 0;
+                                z-index: 1;
+                                background: none;
+                            }
+                        }
+                        &_gray {
+                            &::before {
+                                content: '';
+                                display: block;
+                                width: 15px;
+                                height: 15px;
+                                border: 2px solid gray ;
+                                position: absolute;
+                                border-radius: 5px;
+                                background: #fff;
+                                left: 0;
+                                top: 0;
+                                z-index: 1;
+                                background: none;
+                            }
+                        }
+                        // &::before {
+                        //     content: '';
+                        //     display: block;
+                        //     width: 20px;
+                        //     height: 20px;
+                        //     border: 1px solid #ccc;
+                        //     position: absolute;
+                        //     background: #fff;
+                        //     left: 0;
+                        //     top: 0;
+                        //     z-index: 1;
+                        // }
+                        &::after {
+                            display: block;
+                            width: 15px;
+                            height: 15px;
+                            background: red;
+                            position: absolute;
+                            border-radius: 5px;
+                            top: 10%;
+                            left: 3%;
+                            opacity: 0;
+                            content: '';
+                            z-index: 2;
+                            transition: all .3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.choice__item_blocks_checkbox_input:checked + .choice__item_blocks_checkbox_input_label:after {
+    opacity: 1;
+    transition: all .3s;
+}

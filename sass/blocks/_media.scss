@@ -1,0 +1,207 @@
+@media (max-width: 1224px) {
+    .container {
+        max-width: 950px;
+    }
+    .stock__item_second {
+        width: 20%;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 700px;
+    }
+    .choice__wrapper {
+        flex-direction: column-reverse;
+    }
+    .choice__item_best {
+        justify-content: left;
+        margin-top: 25px;
+    }
+    .choice__item_title {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 500px;
+    }
+    .stock__item_second {
+        width: 33%;
+    }
+    .footer__wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer__item_list {
+        margin-top: 12px;
+    }
+    .header__item_menu {
+        display: none;
+    }
+    .footer {
+        padding-bottom: 30px;
+    }
+    .deposit__buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+        &_right {
+            margin-top: 30px;
+        }
+    }
+    .deposit {
+        padding-bottom: 30px;
+    }
+    .header__burger {
+        position: relative;
+        width: 50px;
+        height: 20px;
+        right: 0;
+        top: 3%;
+        display: block;
+        z-index: 1000;
+        &_active {
+            span {
+                display: none;
+                transition: all .3s;
+            }
+            &::before {
+                transform: rotate(-45deg);
+                bottom: -9%;
+                transition: all .3s;
+            }
+            &::after {
+                transform: rotate(45deg);
+                top: 9%;
+                transition: all .3s;
+            }
+        }
+        span {
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            right: 0;
+            top: 9px;
+            background: #fff;
+        }
+        &::before {
+            content: '';
+            width: 100%;
+            height: 4px;
+            right: 0;
+            top: 0;
+            position: absolute;
+            background: #fff;
+            transition: all .3s;
+        }
+        &::after {
+            content: '';
+            width: 100%;
+            height: 4px;
+            right: 0;
+            position: absolute;
+            bottom: -16%;
+            background: #fff;
+            transition: all .3s;
+        }
+    }
+    .header__item_language {
+        display: none;
+    }
+    .header__burger_list {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        left: -100%;
+        top: 72px;
+        z-index: 5000;
+        padding-top: 30px;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        display: block;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+        text-align: center;
+        transition: all .3s;
+        &_active {
+            left: 0;
+            transition: all .3s;
+        }
+        &_select {
+            background: #fff;
+            width: 80px;
+            height: 50px;
+            border-radius: 50px;
+            padding-left: 10px;
+            color: #000;
+            border: none;
+            &_option {
+                background: #000;
+                color: #fff;
+            }
+        }
+        &_menu {
+            text-align: center;
+            margin-top: 30px;
+            &_type {
+                margin: 20px 0;
+                a {
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 25px;
+                    line-height: 16px;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 571px) {
+    .container {
+        max-width: 300px;
+    }
+    .choice__item_blocks {
+        flex-wrap: wrap;
+    }
+    .choice__item_blocks_checkbox {
+        &:nth-child(5) {
+            margin-top: 30px;
+        }
+        &:nth-child(6) {
+            margin-top: 30px;
+        }
+        &:nth-child(7) {
+            margin-top: 30px;
+        }
+        &:nth-child(8) {
+            margin-top: 30px;
+        }
+    }
+    .choice__item_search {
+        input {
+            width: 200px;
+        }
+    }
+    .button--depositFirst {
+        width: 130px;
+        a {
+            font-size: 13px;
+        }
+    }
+    .button--deposit {
+        width: 130px;
+        a {
+            font-size: 16px;
+        }
+    }
+    .stock__item_second {
+        width: 50%;
+    }
+}

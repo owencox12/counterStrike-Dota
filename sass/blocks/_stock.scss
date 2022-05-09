@@ -1,0 +1,173 @@
+.stock {
+    padding-top: 24px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        &_second {
+            margin-top: 42px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+    &__item {
+        &_second {
+            width: 11%;
+            margin-top: 20px;
+        }
+        &_link {
+            a {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                color: #F4C038;
+                text-decoration: none;
+                img {
+                    margin-right: 12px;
+                }
+            }
+        }
+        &_image {
+            margin-right: 12px;
+        }
+        &_select {
+            background: none;
+            border: none;
+            color: #fff;
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+            &_option {
+                background: #000;
+                border: none;
+            }
+        }
+        &_block {
+            width: 120px;
+            height: 132px;
+            background: #272E3B;
+            border-radius: 16px;
+            padding-top: 12px;
+            position: relative;
+            cursor: pointer;
+            &_visible {
+                &:hover {
+                    border: 1px solid #fff;
+                    transition: all .3s;
+                    border-radius: 0;
+                }
+            }
+            &_dota {
+                padding-top: 0;
+                padding-bottom: 10px;
+            }
+            &_disabled {
+                border: 1px dashed #3D4554;
+                border-radius: 16px;
+                background: none;
+                cursor: not-allowed;
+                &_active {
+                    cursor: pointer;
+                }
+            }
+            &_date {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                color: rgba(255, 255, 255, 0.5);
+                text-align: center;
+                margin-top: 4px;
+
+            }
+            &_image {
+                img {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+            &_price {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #ffff;
+                text-align: center;
+                margin-top: 16px;
+                span {
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                &_fire {
+                    color: #F47523;
+                }
+            }
+            &_divider {
+                width: 24px;
+                height: 4px;
+                position: absolute;
+                bottom: 0;
+                left: 40%;
+                &_yellow {
+                    background: #FFCE50;
+                    box-shadow: 0px 6px 8px rgba(24, 39, 75, 0.12), 0px 8px 16px rgba(24, 39, 75, 0.08);
+                }
+                &_red {
+                    background: #ED422B;
+                    box-shadow: 0px 6px 8px rgba(24, 39, 75, 0.12), 0px 8px 16px rgba(24, 39, 75, 0.08);
+                }
+                &_purple {
+                    background: #CF309C;
+                    box-shadow: 0px 6px 8px rgba(24, 39, 75, 0.12), 0px 8px 16px rgba(24, 39, 75, 0.08);
+                }
+                &_fiolet {
+                    background: #8533ED;
+                    box-shadow: 0px 6px 8px rgba(24, 39, 75, 0.12), 0px 8px 16px rgba(24, 39, 75, 0.08);
+                }
+                &_blue {
+                    background: #275CE4;
+                    box-shadow: 0px 6px 8px rgba(24, 39, 75, 0.12), 0px 8px 16px rgba(24, 39, 75, 0.08);
+                }
+                &_green {
+                    background: #4ADD32;
+                    box-shadow: 0px 6px 8px rgba(24, 39, 75, 0.12), 0px 8px 16px rgba(24, 39, 75, 0.08);
+                }
+            }
+        }
+    }
+    &__text {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 40px;
+    }
+    &__link {
+        text-align: center;
+        margin-top: 12px;
+        a {
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #F4C038;
+            text-decoration: none;
+            img {
+                margin-right: 10px;
+            }
+        }
+    }
+}

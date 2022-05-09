@@ -1,0 +1,58 @@
+.deposit {
+    min-height: 278px;
+    background: #272E3B;
+    &__title {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        color: #FFFFFF;
+        padding-top: 47px;
+    }
+    &__subtitles {
+        display: flex;
+        margin-top: 8px;
+        &_subtitle {
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: rgba(255, 255, 255, 0.5);
+            margin: 0 16.5px;
+            
+            &:first-child {
+                margin-left: 0;
+                border-right: 1px solid rgba(255, 255, 255, 0.5);
+                padding-right: 16.5px;
+                margin-right: 0;
+            }
+        }
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+        &_left {
+            display: flex;
+        }
+        &_right {
+            &_link {
+                a {
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
